@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atmosphere Live - Dashboard</title>
+    <!-- Tailwind CSS with Plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts & Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..900;1,6..12,300..900&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "on-tertiary": "#ffffff",
+              "surface-bright": "#faf6f0",
+              "primary": "#4a7c59",
+              "tertiary-container": "#c4a66a",
+              "tertiary": "#705c30",
+              "on-secondary-fixed-variant": "#4a4538",
+              "outline": "#74796e",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#eae6de",
+              "on-background": "#2e3230",
+              "on-error-container": "#690005",
+              "on-secondary-container": "#5e5548",
+              "on-primary-fixed-variant": "#2a6038",
+              "outline-variant": "#c4c8bc",
+              "background": "#faf6f0",
+              "tertiary-fixed": "#f8e0a8",
+              "surface-dim": "#dbd7cf",
+              "secondary-container": "#f0e8db",
+              "on-tertiary-fixed-variant": "#554020",
+              "on-tertiary-container": "#554020",
+              "primary-fixed-dim": "#8ecf9e",
+              "secondary-fixed": "#f0e8db",
+              "tertiary-fixed-dim": "#dcc48e",
+              "surface": "#faf6f0",
+              "error-container": "#ffdad8",
+              "primary-fixed": "#c8e8d0",
+              "on-tertiary-fixed": "#221a05",
+              "surface-container-highest": "#e4e0d8",
+              "on-secondary": "#ffffff",
+              "primary-container": "#78a886",
+              "surface-tint": "#4a7c59",
+              "on-surface": "#1e2923",
+              "inverse-on-surface": "#f5f0e8",
+              "surface-container-low": "#f5f1ea",
+              "surface-container": "#f0ece4",
+              "inverse-surface": "#2e3230",
+              "on-surface-variant": "#5c6f64",
+              "on-primary-fixed": "#002110",
+              "surface-variant": "#e4e0d8",
+              "surface-container-lowest": "#ffffff",
+              "error": "#c2413b",
+              "on-primary-container": "#d8f0de",
+              "secondary-fixed-dim": "#d4ccbf",
+              "inverse-primary": "#8ecf9e",
+              "on-error": "#ffffff",
+              "on-secondary-fixed": "#1e1a13",
+              "secondary": "#6b6358"
+            },
+            "borderRadius": {
+              "DEFAULT": "0.75rem",
+              "lg": "1rem",
+              "xl": "1.25rem",
+              "2xl": "1.5rem",
+              "full": "9999px"
+            },
+            "spacing": {
+              "card-gap": "20px",
+              "unit": "4px",
+              "container-padding": "32px",
+              "section-margin": "48px",
+              "gutter": "24px"
+            },
+            "fontFamily": {
+              "display-temp": ["Nunito Sans", "Literata", "sans-serif"],
+              "headline-lg": ["Nunito Sans", "sans-serif"],
+              "body-lg": ["Nunito Sans", "sans-serif"],
+              "body-md": ["Nunito Sans", "sans-serif"],
+              "label-mono": ["Nunito Sans", "sans-serif"],
+              "headline-md": ["Nunito Sans", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="text-on-surface min-h-screen flex overflow-x-hidden bg-[#f7f9f6]">
+    <div id="root" class="w-full min-h-screen"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
